@@ -39,7 +39,10 @@ class activity_edit_Image_Text():
         #
         Driver.find_element_by_xpath('/html/body/div[1]/div/div/form/div[1]/div/div[2]/div[1]/div[2]/div[1]/div/div[1]/button').click()
         time.sleep(2)
-        Driver.find_element_by_xpath("/html/body/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div[3]/div").click()
+        # Driver.switch_to.default_content()
+        # Driver.switch_to.frame(Driver.find_element_by_xpath('//*[@id="ueditor_0"]'))
+        Driver.find_element_by_xpath('//*[@id="upload_img"]').click()
+
 
 
 if __name__=='__main__':
