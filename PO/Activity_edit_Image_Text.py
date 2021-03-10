@@ -43,4 +43,4 @@ class activity_edit_Image_Text():
 
 
 if __name__=='__main__':
-    activity_edit_Image_Text().Activity_map()
+    activity_edit_Image_Text().
