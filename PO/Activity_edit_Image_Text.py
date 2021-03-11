@@ -14,7 +14,10 @@ from common.BaseDriver import Driver
 import time
 from selenium.webdriver.common.keys import Keys
 import pyautogui
+import ec
+from selenium.webdriver.support import expected_conditions as EC
 
+EC.frame_to_be_available_and_switch_to_it()
 Driver = Driver().login()
 Driver.switch_to.frame(Driver.find_element_by_xpath('//*[@id="tabContent"]/div/iframe'))
 # 点击编辑编辑按钮，进入编辑页
